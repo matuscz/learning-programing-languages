@@ -12,5 +12,5 @@ I am using AI in two ways:
 
 In most projects in this repo, am using way one, because I want to learn as much as possible from them, because they are the basics.
 
-##### My perspective of programing in the era of AI
+#### My perspective of programing in the era of AI
 I think the programming won't disseappear, it will just change. From remembering every line of code, to reviewing what AI had written, what it actually does, and if it is secure.
