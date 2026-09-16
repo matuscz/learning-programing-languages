@@ -8,10 +8,8 @@ wins_against = {
 }
 
 with open('results.txt', 'r', encoding='utf-8') as file:
-    # Načte řádky, ořeže bílé znaky a vynechá ty, které začínají na '#'
     lines = [line.strip() for line in file if line.strip() and not line.strip().startswith('#')]
     
-    # Nyní můžete bezpečně přiřadit první dva platné řádky
     you_wins, pc_wins = lines[0], lines[1]
 
     you_wins = int(you_wins)
@@ -101,7 +99,6 @@ def game():
     with open('results.txt', 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-    # Najdeme datové řádky (ne komentáře a ne prázdné)
     new_lines = []
     data_written = 0
 
@@ -115,9 +112,9 @@ def game():
                 new_lines.append(str(pc_wins) + '\n')
                 data_written = 2
             else:
-                new_lines.append(line)  # další datové řádky necháme
+                new_lines.append(line)
         else:
-            new_lines.append(line)  # komentáře a prázdné řádky necháme
+            new_lines.append(line)
 
     with open('results.txt', 'w', encoding='utf-8') as file:
         file.writelines(new_lines)
