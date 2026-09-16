@@ -3,3 +3,4 @@ So my first game that I made in python for this repo, was this classic! It was p
 
 * [First version](v1.py) - original 124 lines of code
 * [Second version](v2.py) - more economical version with less lines of code
+* [Third version](v3.py) - more functions then ever
